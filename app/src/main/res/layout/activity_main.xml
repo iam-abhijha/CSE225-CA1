@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="eKart"
+        app:logo="@drawable/logo_s"
+        app:titleMarginStart="30dp"
+        android:background="#4FFD7B"
+        app:subtitle="Your Orders"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar">
+
+        <LinearLayout
+            android:id="@+id/linearLay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:id="@+id/p1Img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/p1"/>
+                <TextView
+                    android:id="@+id/p1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple iPhone 13"
+                    android:layout_toRightOf="@id/p1Img"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <RatingBar
+                    android:id="@+id/p1Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/p1Img"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:id="@+id/p2Img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/p2"/>
+                <TextView
+                    android:id="@+id/p2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MacBook Pro"
+                    android:layout_toRightOf="@id/p2Img"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <RatingBar
+                    android:id="@+id/p2Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/p2Img"
+                    android:layout_marginLeft="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:id="@+id/p3Img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/p3"/>
+                <TextView
+                    android:id="@+id/p3Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="iPad Pro"
+                    android:layout_toRightOf="@id/p3Img"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <RatingBar
+                    android:id="@+id/p3Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/p3Img"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:id="@+id/p4Img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/p4"/>
+
+                <TextView
+                    android:id="@+id/p4Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/p4Img"
+                    android:text="Apple Headphone"
+                    android:textSize="30sp" />
+
+                <RatingBar
+                    android:id="@+id/p4Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/p4Img"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rL5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:id="@+id/p5Img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/p5"/>
+                <TextView
+                    android:id="@+id/p5Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple Airpods"
+                    android:layout_toRightOf="@id/p5Img"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <RatingBar
+                    android:id="@+id/p5Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/p5Img"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:id="@+id/p6Img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/p6"/>
+                <TextView
+                    android:id="@+id/p6Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple Watch 7"
+                    android:layout_toRightOf="@id/p6Img"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <RatingBar
+                    android:id="@+id/p6Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/p6Img"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rL7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:id="@+id/p7Img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/p7"
+                    android:layout_marginBottom="50dp"/>
+                <TextView
+                    android:id="@+id/p7Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple iMac"
+                    android:layout_toRightOf="@id/p7Img"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <RatingBar
+                    android:id="@+id/p7Rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p7Name"
+                    android:layout_toRightOf="@id/p7Img"
+                    android:layout_marginLeft="20dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <ProgressBar android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+
+    <Button
+        android:id="@+id/progressBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:text="Home"/>
+    <Button
+        android:id="@+id/intentBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>
